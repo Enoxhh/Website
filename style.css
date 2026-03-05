@@ -22,3 +22,27 @@ body {
     background-color: #ffe066;
     color: rgb(73, 182, 218);
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#home1 {
+    margin-left: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+#home2 {
+    margin-left: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+}
+
+
