@@ -1,18 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact | PSE Enclave</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="topnav">
-        <a  href="index.html">Home</a>
-        <a href="About_Us.html">About_Us</a>
-        <a href="Gallery.html">Gallery</a>
-        <a class="active" href="Contact_Us.html">Contact_Us</a>
-    </div>
-    
+
+    <header class="site-header">
+        <div class="container navbar">
+            <a href="index.html" class="brand">
+                <div class="brand-logo">
+                    <picture>
+                        <source srcset="images/logo.png" type="image/png">
+                        <img src="images/logo.jpg" alt="PSE Enclave logo">
+                    </picture>
+                </div>
+                <div class="brand-text">
+                    <h1>PSE Enclave</h1>
+                    <p>Homestay • Thrissur, Kerala</p>
+                </div>
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="About_Us.html">About</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="experiences.html">Experiences</a>
+                <a class="active" href="Contact_Us.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-section">
+            <div class="container">
+                <h2 class="section-title">Booking enquiry</h2>
+                <p class="section-text">Fill this in and your email app will open with the enquiry already prepared.</p>
+
+                <div class="contact-grid">
+                    <div class="form-card">
+                        <form id="enquiryForm">
+                            <div class="form-row">
+                                <div class="field">
+                                    <label for="name">Full name</label>
+                                    <input id="name" type="text" placeholder="Your name" required>
+                                </div>
+
+                                <div class="field">
+                                    <label for="phone">Phone number</label>
+                                    <input id="phone" type="tel" placeholder="+91 7259900168" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="field">
+                                    <label for="email">Email</label>
+                                    <input id="email" type="email" placeholder="you@example.com" required>
+                                </div>
+
+                                <div class="field">
+                                    <label for="guests">Guests</label>
+                                    <select id="guests">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5+</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label for="dates">Preferred dates</label>
+                                <input id="dates" type="text" placeholder="Example: 12 May - 14 May">
+                            </div>
+
+                            <div class="field">
+                                <label for="message">Message</label>
+                                <textarea id="message"
+                                    placeholder="Tell us what you need, such as dates, room preference, or activities."></textarea>
+                            </div>
+
+                            <button class="btn" type="submit">Send enquiry</button>
+                            <div class="notice" id="noticeBox"></div>
+                        </form>
+                    </div>
+
+                    <div class="side-card">
+                        <h2 style="font-size: 1.45rem; margin-bottom: 12px;">Contact details</h2>
+                        <p style="color: var(--muted); margin-bottom: 12px;">Use the form or contact directly through
+                            any of the links below.</p>
+
+                        <ul class="info-list">
+                            <li><strong>Location:</strong> Thrissur, Kerala</li>
+                            <li><strong>Email:</strong> enoshcherian4@gmail.com</li>
+                            <li><strong>WhatsApp:</strong> 7259900168</li>
+                            <li><strong>Nearby:</strong> River & backwaters, beach, and day trips around Thrissur</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-left">
+                <strong>PSE Enclave</strong>
+                <p>Thrissur, Kerala</p>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.instagram.com/__.enoxhh/" target="_blank">
+                    <span class="icon icon-instagram">I</span>
+                    <span>Instagram</span>
+                </a>
+                <a href="mailto:enoshcherian4@gmail.com">
+                    <span class="icon icon-gmail">@</span>
+                    <span>Gmail</span>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61555256245981" target="_blank">
+                    <span class="icon icon-facebook">f</span>
+                    <span>Facebook</span>
+                </a>
+                <a href="https://wa.me/917259900168" target="_blank">
+                    <span class="icon icon-whatsapp">W</span>
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
